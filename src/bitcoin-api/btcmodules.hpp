@@ -1,17 +1,14 @@
 #ifndef BTCMODULES_HPP
 #define BTCMODULES_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <bitcoin-api/ibtcjson.hpp>
 #include <bitcoin-api/ibtcrpc.hpp>
 #include <bitcoin-api/imtbitcoin.hpp>
 #include <bitcoin-api/btchelper.hpp>
 
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
+
 
 /*
 *
@@ -39,7 +36,7 @@
 
 class BtcModules;
 
-typedef _SharedPtr<BtcModules> BtcModulesPtr;
+typedef std::shared_ptr<BtcModules> BtcModulesPtr;
 
 
 class BtcModules

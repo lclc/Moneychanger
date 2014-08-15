@@ -1,9 +1,6 @@
 #ifndef SAMPLEESCROWMANAGER_HPP
 #define SAMPLEESCROWMANAGER_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <bitcoin/sampleescrowclient.hpp>
 
 class BtcGuiTest;

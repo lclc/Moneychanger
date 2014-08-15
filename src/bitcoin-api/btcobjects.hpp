@@ -1,20 +1,15 @@
 #ifndef BTCOBJECTS_HPP
 #define BTCOBJECTS_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <json/json.h>
-
-#include _CINTTYPES
-#include _MEMORY
 
 #include <list>
 #include <vector>
 
 #include <cstddef>
 
+#include <cinttypes>
+#include <memory>
 
 
 /*
@@ -88,7 +83,7 @@ struct BtcTxDetail
 
     BtcTxDetail(const Json::Value &detail);
 };
-typedef _SharedPtr<BtcTxDetail>     BtcTxDetailPtr;
+typedef std::shared_ptr<BtcTxDetail>     BtcTxDetailPtr;
 typedef std::vector<BtcTxDetailPtr> BtcTxDetails;
 
 // This struct holds various information about a bitcoin transaction.
@@ -291,7 +286,7 @@ struct BtcRpcPacket
 
     BtcRpcPacket(const std::string &strData);
 
-    typedef _SharedPtr<BtcRpcPacket> BtcRpcPacketPtr;
+    typedef std::shared_ptr<BtcRpcPacket> BtcRpcPacketPtr;
     BtcRpcPacket(const BtcRpcPacketPtr packet);
 
     ~BtcRpcPacket();
@@ -316,21 +311,21 @@ private:
 };
 
 
-typedef _SharedPtr<BtcInfo>                BtcInfoPtr;
-typedef _SharedPtr<BtcBalances>            BtcBalancesPtr;
-typedef _SharedPtr<BtcTxDetail>            BtcTxDetailPtr;
-typedef _SharedPtr<BtcTransaction>         BtcTransactionPtr;
-typedef _SharedPtr<BtcRawTransaction>      BtcRawTransactionPtr;
-typedef _SharedPtr<BtcUnspentOutput>       BtcUnspentOutputPtr;
-typedef _SharedPtr<BtcAddressBalance>      BtcAddressBalancePtr;
-typedef _SharedPtr<BtcAddressInfo>         BtcAddressInfoPtr;
-typedef _SharedPtr<BtcMultiSigAddress>     BtcMultiSigAddressPtr;
-typedef _SharedPtr<BtcBlock>               BtcBlockPtr;
-typedef _SharedPtr<BtcTxIdVout>            BtcTxIdVoutPtr;
-typedef _SharedPtr<BtcTxTargets>           BtcTxTargetPtr;
-typedef _SharedPtr<BtcSignedTransaction>   BtcSignedTransactionPtr;
-typedef _SharedPtr<BtcSigningPrerequisite> BtcSigningPrerequisitePtr;
-typedef _SharedPtr<BtcRpcPacket>           BtcRpcPacketPtr;
+typedef std::shared_ptr<BtcInfo>                BtcInfoPtr;
+typedef std::shared_ptr<BtcBalances>            BtcBalancesPtr;
+typedef std::shared_ptr<BtcTxDetail>            BtcTxDetailPtr;
+typedef std::shared_ptr<BtcTransaction>         BtcTransactionPtr;
+typedef std::shared_ptr<BtcRawTransaction>      BtcRawTransactionPtr;
+typedef std::shared_ptr<BtcUnspentOutput>       BtcUnspentOutputPtr;
+typedef std::shared_ptr<BtcAddressBalance>      BtcAddressBalancePtr;
+typedef std::shared_ptr<BtcAddressInfo>         BtcAddressInfoPtr;
+typedef std::shared_ptr<BtcMultiSigAddress>     BtcMultiSigAddressPtr;
+typedef std::shared_ptr<BtcBlock>               BtcBlockPtr;
+typedef std::shared_ptr<BtcTxIdVout>            BtcTxIdVoutPtr;
+typedef std::shared_ptr<BtcTxTargets>           BtcTxTargetPtr;
+typedef std::shared_ptr<BtcSignedTransaction>   BtcSignedTransactionPtr;
+typedef std::shared_ptr<BtcSigningPrerequisite> BtcSigningPrerequisitePtr;
+typedef std::shared_ptr<BtcRpcPacket>           BtcRpcPacketPtr;
 
 typedef std::vector<BtcTxDetailPtr>        BtcTxDetails;
 typedef std::list<BtcUnspentOutputPtr>     BtcUnspentOutputs;

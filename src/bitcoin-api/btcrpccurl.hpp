@@ -1,10 +1,6 @@
 #ifndef BTCRPCZMQ_HPP
 #define BTCRPCZMQ_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <bitcoin-api/ibtcrpc.hpp>
 #include <bitcoin-api/btcmodules.hpp>
 
@@ -12,9 +8,8 @@
 
 #include "FastDelegate.hpp"
 
-#include _CINTTYPES
-#include _MEMORY
-
+#include <cinttypes>
+#include <memory>
 
 /*
  *
@@ -119,7 +114,7 @@ public slots:
     */
 };
 
-typedef _SharedPtr<BtcRpcCurl> BtcRpcCurlPtr;
+typedef std::shared_ptr<BtcRpcCurl> BtcRpcCurlPtr;
 
 
 #endif // BTCRPCZMQ_HPP

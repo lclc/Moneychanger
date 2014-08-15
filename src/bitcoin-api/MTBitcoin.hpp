@@ -1,16 +1,12 @@
 #ifndef MTBITCOIN_HPP
 #define MTBITCOIN_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <bitcoin-api/imtbitcoin.hpp>
 #include <bitcoin-api/btcobjects.hpp>
 #include <bitcoin-api/btcmodules.hpp>
 
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 #include <map>
 #include <string>
@@ -133,6 +129,6 @@ private:
     BtcModules* modules;
 };
 
-typedef _SharedPtr<MTBitcoin> MTBitcoinPtr;
+typedef std::shared_ptr<MTBitcoin> MTBitcoinPtr;
 
 #endif // MTBITCOIN_HPP

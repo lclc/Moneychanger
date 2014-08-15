@@ -1,17 +1,13 @@
 #ifndef IBTCJSON_HPP
 #define IBTCJSON_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <bitcoin-api/btcobjects.hpp>
 #include <bitcoin-api/btchelper.hpp>
 
 #include <json/json.h>
 
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 #include <string>
 #include <list>
@@ -157,6 +153,6 @@ public:
     virtual bool WalletPassphrase(const std::string &password, const time_t &unlockTime) = 0;
 };
 
-typedef _SharedPtr<IBtcJson> IBtcJsonPtr;
+typedef std::shared_ptr<IBtcJson> IBtcJsonPtr;
 
 #endif // IBTCJSON_HPP

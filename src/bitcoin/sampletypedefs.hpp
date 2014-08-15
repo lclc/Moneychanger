@@ -1,14 +1,9 @@
 #ifndef SAMPLETYPEDEFS_HPP
 #define SAMPLETYPEDEFS_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <list>
-
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 class SampleEscrowServer;
 typedef _SharedPtr<SampleEscrowServer> SampleEscrowServerPtr;

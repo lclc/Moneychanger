@@ -1,9 +1,6 @@
 #ifndef TRANSACTIONMANAGER_HPP
 #define TRANSACTIONMANAGER_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <bitcoin/sampletypedefs.hpp>
 
 #include <QList>

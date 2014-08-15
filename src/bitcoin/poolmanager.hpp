@@ -1,14 +1,10 @@
 #ifndef POOLMANAGER_HPP
 #define POOLMANAGER_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <bitcoin/escrowpool.hpp>
 
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 #include <QObject>
 #include <QList>

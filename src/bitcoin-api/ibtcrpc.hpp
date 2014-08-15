@@ -1,14 +1,10 @@
 #ifndef IBTCRPC_HPP
 #define IBTCRPC_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <bitcoin-api/btcobjects.hpp>
 
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 #include <string>
 
@@ -52,7 +48,7 @@ struct BitcoinServer
     {}
 };
 
-typedef _SharedPtr<BitcoinServer> BitcoinServerPtr;
+typedef std::shared_ptr<BitcoinServer> BitcoinServerPtr;
 
 
 class IBtcRpc
@@ -86,7 +82,7 @@ public:
     virtual BtcRpcPacketPtr SendRpc(BtcRpcPacketPtr jsonString) = 0;
 };
 
-typedef _SharedPtr<IBtcRpc> IBtcRpcPtr;
+typedef std::shared_ptr<IBtcRpc> IBtcRpcPtr;
 
 
 #endif // IBTCRPC_HPP

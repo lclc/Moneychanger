@@ -1,14 +1,10 @@
 #ifndef BTCHELPER_HPP
 #define BTCHELPER_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <bitcoin-api/btcobjects.hpp>
 
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 #include <string>
 
@@ -170,7 +166,7 @@ private:
     BtcModules* modules;
 };
 
-typedef _SharedPtr<BtcHelper> BtcHelperPtr;
+typedef std::shared_ptr<BtcHelper> BtcHelperPtr;
 
 
 namespace btc

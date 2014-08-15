@@ -1,15 +1,11 @@
 #ifndef IMTBITCOIN_HPP
 #define IMTBITCOIN_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <bitcoin-api/btcobjects.hpp>
 #include <bitcoin-api/btchelper.hpp>
 
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 #include <map>
 #include <string>
@@ -149,7 +145,7 @@ public:
     */
 };
 
-typedef _SharedPtr<IMTBitcoin> IMTBitcoinPtr;
+typedef std::shared_ptr<IMTBitcoin> IMTBitcoinPtr;
 
 
 #endif // IMTBITCOIN_HPP
