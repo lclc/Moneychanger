@@ -6,16 +6,16 @@
 #include <memory>
 
 class SampleEscrowServer;
-typedef _SharedPtr<SampleEscrowServer> SampleEscrowServerPtr;
+typedef std::shared_ptr<SampleEscrowServer> SampleEscrowServerPtr;
 
 class SampleEscrowClient;
-typedef _SharedPtr<SampleEscrowClient> SampleEscrowClientPtr;
+typedef std::shared_ptr<SampleEscrowClient> SampleEscrowClientPtr;
 
 class SampleEscrowTransaction;
-typedef _SharedPtr<SampleEscrowTransaction> SampleEscrowTransactionPtr;
+typedef std::shared_ptr<SampleEscrowTransaction> SampleEscrowTransactionPtr;
 typedef std::list<SampleEscrowTransactionPtr> EscrowTransactionList;
 
 class EscrowPool;
-typedef _SharedPtr<EscrowPool> EscrowPoolPtr;
+typedef std::shared_ptr<EscrowPool> EscrowPoolPtr;
 
 #endif // SAMPLETYPEDEFS_HPP

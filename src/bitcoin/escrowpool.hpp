@@ -11,7 +11,7 @@
 class SampleEscrowServer;
 class QThread;
 
-typedef _SharedPtr<SampleEscrowServer> SampleEscrowServerPtr;
+typedef std::shared_ptr<SampleEscrowServer> SampleEscrowServerPtr;
 
 class EscrowPool
 {
@@ -38,6 +38,6 @@ private:
 
 };
 
-typedef _SharedPtr<EscrowPool> EscrowPoolPtr;
+typedef std::shared_ptr<EscrowPool> EscrowPoolPtr;
 
 #endif // ESCROWPOOL_HPP

@@ -47,7 +47,7 @@ public:
     BtcModulesPtr modules;
 };
 
-typedef _SharedPtr<SampleEscrowTransaction> SampleEscrowTransactionPtr;
+typedef std::shared_ptr<SampleEscrowTransaction> SampleEscrowTransactionPtr;
 typedef std::list<SampleEscrowTransactionPtr> SampleEscrowTransactions;
 
 #endif // SAMPLEESCROWTRANSACTION_HPP

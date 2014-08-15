@@ -4,8 +4,8 @@
 #include <bitcoin/sampleescrowtransaction.hpp>
 #include <bitcoin/escrowpool.hpp>
 
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 #include <QObject>
 
@@ -54,11 +54,11 @@ protected:
 
     BtcModulesPtr modules;
 
-    _SharedPtr<QTimer> updateTimer;
+    std::shared_ptr<QTimer> updateTimer;
 
 private:
     struct Action;
-    typedef _SharedPtr<Action> ActionPtr;
+    typedef std::shared_ptr<Action> ActionPtr;
     typedef std::list<ActionPtr> Actions;
     Actions actionsToDo;
 
@@ -80,7 +80,7 @@ public slots:
     void Update();
 };
 
-typedef _SharedPtr<SampleEscrowClient> SampleEscrowClientPtr;
+typedef std::shared_ptr<SampleEscrowClient> SampleEscrowClientPtr;
 
 
 // random name generator

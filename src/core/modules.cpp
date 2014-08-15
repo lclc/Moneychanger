@@ -13,12 +13,12 @@
 #include <gui/widgets/btcwalletpwdlg.hpp>
 
 
-_SharedPtr<SampleEscrowManager> Modules::sampleEscrowManager;
-_SharedPtr<PoolManager> Modules::poolManager;
-_SharedPtr<TransactionManager> Modules::transactionManager;
+std::shared_ptr<SampleEscrowManager> Modules::sampleEscrowManager;
+std::shared_ptr<PoolManager> Modules::poolManager;
+std::shared_ptr<TransactionManager> Modules::transactionManager;
 QPointer<BtcConnectDlg> Modules::connectionManager;
-_SharedPtr<SampleEscrowClient> Modules::sampleEscrowClient;
-_SharedPtr<BtcModules> Modules::btcModules;
+std::shared_ptr<SampleEscrowClient> Modules::sampleEscrowClient;
+std::shared_ptr<BtcModules> Modules::btcModules;
 BtcWalletPwDlgPtr Modules::walletPwDlg;
 
 bool Modules::shutDown;

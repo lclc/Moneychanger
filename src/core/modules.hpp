@@ -22,13 +22,13 @@ public:
     Modules();
     ~Modules();
 
-    static _SharedPtr<SampleEscrowManager> sampleEscrowManager;
-    static _SharedPtr<PoolManager> poolManager;
-    static _SharedPtr<TransactionManager> transactionManager;
+    static std::shared_ptr<SampleEscrowManager> sampleEscrowManager;
+    static std::shared_ptr<PoolManager> poolManager;
+    static std::shared_ptr<TransactionManager> transactionManager;
     static  QPointer<BtcConnectDlg> connectionManager;
-    static _SharedPtr<BtcWalletPwDlg> walletPwDlg;
-    static _SharedPtr<SampleEscrowClient> sampleEscrowClient;
-    static _SharedPtr<BtcModules> btcModules;
+    static std::shared_ptr<BtcWalletPwDlg> walletPwDlg;
+    static std::shared_ptr<SampleEscrowClient> sampleEscrowClient;
+    static std::shared_ptr<BtcModules> btcModules;
 
     static bool shutDown;
 

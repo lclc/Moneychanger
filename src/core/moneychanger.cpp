@@ -44,10 +44,10 @@
 
 #include <core/handlers/DBHandler.hpp>
 
-#include <opentxs/OTAPI.hpp>
-#include <opentxs/OTAPI_Exec.hpp>
-#include <opentxs/OT_ME.hpp>
-#include <opentxs/OTPaths.hpp>
+#include <opentxs/api/OTAPI.hpp>
+#include <opentxs/api/OTAPI_Exec.hpp>
+#include <opentxs/api/OT_ME.hpp>
+#include <opentxs/core/OTPaths.hpp>
 
 #include <QMenu>
 #include <QApplication>

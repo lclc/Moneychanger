@@ -29,7 +29,7 @@ private:
     QMap<std::string, EscrowPoolPtr> poolNameMap;
 };
 
-typedef _SharedPtr<PoolManager> PoolManagerPtr;
+typedef std::shared_ptr<PoolManager> PoolManagerPtr;
 
 
 #endif // POOLMANAGER_HPP

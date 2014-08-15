@@ -28,11 +28,11 @@ private slots:
 private:
     Ui::BtcWalletPwDlg *ui;
 
-    _SharedPtr<QMutex> mutex;
-    _SharedPtr<BtcJson> btcJson;
+    std::shared_ptr<QMutex> mutex;
+    std::shared_ptr<BtcJson> btcJson;
     bool waitingForInput;
 };
 
-typedef _SharedPtr<BtcWalletPwDlg> BtcWalletPwDlgPtr;
+typedef std::shared_ptr<BtcWalletPwDlg> BtcWalletPwDlgPtr;
 
 #endif // BTCWALLETPWDLG_H
