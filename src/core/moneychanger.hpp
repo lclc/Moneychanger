@@ -1,14 +1,10 @@
 #ifndef MONEYCHANGER_HPP
 #define MONEYCHANGER_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <namecoin/Namecoin.hpp>
 
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 #include <QPointer>
 #include <QList>

@@ -1,9 +1,6 @@
 #ifndef SETTINGS_HPP
 #define SETTINGS_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <QWidget>
 
 namespace Ui {

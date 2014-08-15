@@ -4,8 +4,6 @@
 
 #include <core/modules.hpp>
 
-#include <opentxs/TR1_Wrapper.hpp>
-
 #include <bitcoin/sampleescrowmanager.hpp>
 #include <bitcoin/poolmanager.hpp>
 #include <bitcoin/transactionmanager.hpp>

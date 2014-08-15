@@ -1,9 +1,6 @@
 #ifndef EDITDETAILS_HPP
 #define EDITDETAILS_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <gui/widgets/detailedit.hpp>
 
 #include <QVariant>

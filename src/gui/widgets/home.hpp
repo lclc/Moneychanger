@@ -1,10 +1,7 @@
 #ifndef MTHOME_HPP
 #define MTHOME_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
-#include <opentxs/OTRecordList.hpp>
+#include <opentxs/api/OTRecordList.hpp>
 
 #include <QPointer>
 #include <QWidget>

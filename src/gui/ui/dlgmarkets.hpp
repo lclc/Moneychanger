@@ -1,9 +1,6 @@
 #ifndef DLGMARKETS_HPP
 #define DLGMARKETS_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <core/handlers/contacthandler.hpp>
 
 #include <QPointer>

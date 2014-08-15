@@ -1,9 +1,6 @@
 #ifndef TRANSLATION_HPP
 #define TRANSLATION_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <QObject>
 #include <QApplication>
 #include <QTranslator>

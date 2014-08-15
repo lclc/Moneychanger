@@ -1,8 +1,8 @@
 #ifndef COMPOSE_HPP
 #define COMPOSE_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
+#include <cinttypes>
+#include <memory>
 
 #include <QWidget>
 

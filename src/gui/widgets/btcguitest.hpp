@@ -1,9 +1,6 @@
 #ifndef BTCGUITEST_HPP
 #define BTCGUITEST_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <bitcoin/sampleescrowtransaction.hpp>
 
 #include <QWidget>

@@ -1,9 +1,6 @@
 #ifndef DLGMENU_HPP
 #define DLGMENU_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <QDialog>
 
 namespace Ui {

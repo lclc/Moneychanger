@@ -1,12 +1,8 @@
 #ifndef SENDDLG_HPP
 #define SENDDLG_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-#include <opentxs/TR1_Wrapper.hpp>
-
-#include _CINTTYPES
-#include _MEMORY
+#include <cinttypes>
+#include <memory>
 
 #include <QPointer>
 #include <QWidget>

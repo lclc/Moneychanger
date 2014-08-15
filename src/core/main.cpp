@@ -9,10 +9,10 @@
 
 #include <bitcoin-api/btcmodules.hpp>
 
-#include <opentxs/OTAPI.hpp>
-#include <opentxs/OTAPI_Exec.hpp>
-#include <opentxs/OTLog.hpp>
-#include <opentxs/OTPaths.hpp>
+#include <opentxs/api/OTAPI.hpp>
+#include <opentxs/api/OTAPI_Exec.hpp>
+#include <opentxs/core/OTLog.hpp>
+#include <opentxs/core/OTPaths.hpp>
 
 #include <QTimer>
 
@@ -29,12 +29,12 @@ public:
     __OTclient_RAII()
     {
         // SSL gets initialized in here, before any keys are loaded.
-        OTAPI_Wrap::AppInit();
+        opentxs::OTAPI_Wrap::AppInit();
     }
     ~__OTclient_RAII()
     {
         
-        OTAPI_Wrap::AppCleanup();
+        opentxs::OTAPI_Wrap::AppCleanup();
     }
 };
 
@@ -60,9 +60,9 @@ int main(int argc, char *argv[])
     //
     __OTclient_RAII the_client_cleanup;  // <===== SECOND constructor is called here.
     // ----------------------------------------
-    if (NULL == OTAPI_Wrap::It())
+    if (NULL == opentxs::OTAPI_Wrap::It())
     {
-        OTLog::vError(0, "Error, exiting: OTAPI_Wrap::AppInit() call must have failed.\n");
+        opentxs::OTLog::vError(0, "Error, exiting: OTAPI_Wrap::AppInit() call must have failed.\n");
         return -1;
     }
     // ----------------------------------------
@@ -135,7 +135,7 @@ int main(int argc, char *argv[])
     Moneychanger::It(NULL, true); // bShuttingDown=true.
 
     // ----------------------------------------------------------------
-    OTLog::vOutput(0, "Finished executing the QApplication!\n(AppCleanup should occur "
+    opentxs::OTLog::vOutput(0, "Finished executing the QApplication!\n(AppCleanup should occur "
                    "immediately after this point.)\nReturning: %d\n", nExec);
     // ----------------------------------------------------------------
     return nExec;

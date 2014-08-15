@@ -1,9 +1,6 @@
 #ifndef BTCSENDDLG_HPP
 #define BTCSENDDLG_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <bitcoin/sampleescrowclient.hpp>
 
 #include <QWidget>
