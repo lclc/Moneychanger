@@ -1,9 +1,6 @@
 #ifndef DLGPASSWORD_HPP
 #define DLGPASSWORD_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <QString>
 #include <QDialog>
 #include <QCloseEvent>
@@ -22,7 +19,7 @@ class MTDlgPassword : public QDialog
     Q_OBJECT
 
 public:
-    explicit MTDlgPassword(QWidget *parent, OTPassword & thePassword);
+    explicit MTDlgPassword(QWidget *parent, opentxs::OTPassword & thePassword);
     ~MTDlgPassword();
 
     void setDisplay(QString qstrDisplay);

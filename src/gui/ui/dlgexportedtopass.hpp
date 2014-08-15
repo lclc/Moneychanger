@@ -1,9 +1,6 @@
 #ifndef DLGEXPORTEDTOPASS_HPP
 #define DLGEXPORTEDTOPASS_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <QDialog>
 
 namespace Ui {

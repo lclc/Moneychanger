@@ -1,9 +1,6 @@
 #ifndef DLGEXPORTCASH_HPP
 #define DLGEXPORTCASH_HPP
 
-#include <opentxs/WinsockWrapper.h>
-#include <opentxs/ExportWrapper.h>
-
 #include <QDialog>
 
 namespace Ui {
