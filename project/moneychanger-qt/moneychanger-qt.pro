@@ -37,7 +37,6 @@ include($${SOLUTION_DIR}../src/bitcoin/bitcoin.pri)
 include($${SOLUTION_DIR}../src/namecoin/namecoin.pri)
 
 
-
 #-------------------------------------------------
 # Package Config
 
@@ -46,6 +45,17 @@ unix:{
     PKGCONFIG += opentxs
 }
 
+#-------------------------------------------------
+# Define
+
+win32:{
+    DEFINES    += "EXPORT=__declspec(dllexport)"
+}
+
+# MAC AND LINUX:
+unix: {
+    DEFINES    += "EXPORT=\"\""
+}
 
 #-------------------------------------------------
 # Include
@@ -75,7 +85,6 @@ mac:{
 
 # MAC AND LINUX:
 unix: {
-
 ##  LIBS += -L$${OUT_PWD}/../curl
 ##  LIBS += -lcurl
 
